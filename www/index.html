@@ -1,21 +1,15 @@
 {{> head}}
       <main>
           {{#section projects multiple=true order=number}}
-          <a href="{{_permalink}}">
-             {{titelbild type=image width=500 alt="titelbild"}} 
+          <a href="{{_permalink}}" class="project-item">
+              <div class="colorbox">
+
+                  {{titelbild type=image}} 
+              </div>
               <h2>{{titel}}</h2>
               <p>{{untertitel}}</p>
               {{number type=number}}
           </a>
           {{/section}}
-          <div>
-              <a href="#">
-                  <img src="scheer_interchange_titel.jpg">
-                  <div>
-                      <h2>inter°change</h2>
-                      <p>bachelor thesis | 2019</p>
-                  </div>
-              </a>
-          </div>
       </main>
 {{> footer}}
