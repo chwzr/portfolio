@@ -1,0 +1,15 @@
+{{> head}}
+
+      {{#section projects}}
+         <h1> {{titel}} </h1>
+         {{titelbild type=image}}
+         {{#if text1}}
+            {{text1 type=html required=false}}
+        {{/if}}
+        {{bild2 type=image}}
+        {{text2 type=html}}
+      {{/section}}  
+    </body>
+</html>
+
+{{> footer}}
