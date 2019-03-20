@@ -1,0 +1,16 @@
+{{> head}}
+<main class="project-metaphoro">
+      {{#section metaphoro}}
+         <h1> {{titel}} </h1>
+         <div class="video-metaphoro">{{video type=link unfurl=true}}
+         </div>
+       <div class="text-metaphoro"> {{#if text1}}
+            {{text1 type=html required=false}}
+        {{/if}} </div>
+       {{#if bild1}}
+            {{bild1 type=image required=false}}
+        {{/if}}
+      {{/section}}  
+</main>
+
+{{> footer}}
