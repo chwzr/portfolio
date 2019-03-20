@@ -3,7 +3,7 @@
       {{#section narzissmus}}
          <h1> {{titel}} </h1>
         <div class="img1-narzissmus">
-            {#if bild1}}
+            {{#if bild1}}
                 {{bild1 type=image required=false}}
             {{/if}}
             {{#if bild2}}
@@ -21,11 +21,13 @@
                 {{#if bild6}}
             {{bild6 type=image required=false}}
             {{/if}}</div>
-        <div class="text-narzissmus"> {{#if text1}}
+            {{#if text1}}
+        <div class="text-narzissmus">
                 {{text1 type=html required=false}}
-            {{/if}} </div>
+            </div>
+            {{/if}}
          <div class="img2-narzissmus">
-            {#if bild7}}
+            {{#if bild7}}
                 {{bild7 type=image required=false}}
             {{/if}}
             {{#if bild8}}
@@ -41,7 +43,7 @@
                 {{bild11 type=image required=false}}
              {{/if}}</div>
         <div class="img3-narzissmus">
-             {#if bild12}}
+             {{#if bild12}}
                 {{bild12 type=image required=false}}
              {{/if}}
             {{#if bild13}}
@@ -50,8 +52,7 @@
             {{#if text2}}
                 {{text2 type=html required=false}}
             {{/if}}</div>
-         
-      {{/section}}  
+      {{/section}}
 </main>
 
 {{> footer}}
