@@ -1,0 +1,24 @@
+{{> head}}
+<main class="project-home2ocean">
+      {{#section home2ocean}}
+         <h1> {{titel}} </h1>
+         <div class="video-home2ocean">{{video type=link unfurl=true}}
+         </div>
+       <div class="text-home2ocean"> {{#if text1}}
+            {{text1 type=html required=false}}
+        {{/if}} </div>
+       {{#if bild1}}
+       <div class="img-home2ocean">
+            {{bild1 type=image required=false}}
+        {{/if}}
+        {{#if bild2}}
+            {{bild2 type=image required=false}}
+        {{/if}}
+        {{#if bild3}}
+            {{bild3 type=image required=false}}
+        {{/if}}
+        </div>
+      {{/section}}  
+</main>
+
+{{> footer}}

@@ -58,24 +58,6 @@ main {
   max-width: 100%;
 }
 
-.project-detail{
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
-  max-width: 50%;
-
-  h1 {
-    font-size: 3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
 .project-prokscheer {
   display: flex;
   flex-direction: column;
@@ -129,7 +111,7 @@ main {
 
 .video-metaphoro {
   width: 150%;
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 
 .project-pangram {
@@ -147,6 +129,81 @@ main {
     display: block;
     margin: 1em 0;
   }
+}
+
+.text-pangram {
+  max-width: 65%;
+  margin: 2em 0;
+}
+
+.img-pangram {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+.project-home2ocean {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.text-home2ocean {
+  max-width: 65%;
+  margin: 2em 0;
+}
+
+.img-home2ocean {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+.video-home2ocean {
+  width: 150%;
+  margin: 1.5em 0 0 0;
+}
+
+.project-napapp {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.text-napapp {
+  max-width: 65%;
+  margin: 2em 0;
+}
+
+.img-napapp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
 }
 
 footer {

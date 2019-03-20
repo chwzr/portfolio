@@ -1,26 +1,25 @@
 {{> head}}
-<main class="project-pangram">
-      {{#section pangram}}
+<main class="project-napapp">
+      {{#section napapp}}
          <h1> {{titel}} </h1>
         {{#if bild1}}
             {{bild1 type=image required=false}}
         {{/if}}
-       <div class="text-pangram"> {{#if text1}}
+       <div class="text-napapp"> {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}} </div>
-       {{#if bild2}}
-            {{bild2 type=image required=false}}
-        {{/if}}   
-        {{#if bild3}}
-            {{bild3 type=image required=false}}
-        {{/if}}
-        <div class="img-pangram">
+        <div class="img-napapp">{{#if bild2}}
+                {{bild2 type=image required=false}}
+            {{/if}}   
+            {{#if bild3}}
+                {{bild3 type=image required=false}}
+            {{/if}}
         {{#if bild4}}
             {{bild4 type=image required=false}}
-        {{/if}}
+        {{/if}}</div>
         {{#if bild5}}
             {{bild5 type=image required=false}}
-        {{/if}}</div>   
+        {{/if}}   
       {{/section}}  
 </main>
 
