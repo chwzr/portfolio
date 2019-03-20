@@ -3,11 +3,12 @@
           {{#section projects multiple=true order=number}}
           <a href="{{_permalink}}" class="project-item">
               <div class="colorbox">
-
-                  {{titelbild type=image}} 
+                  {{titelbild type=image}}
+                  <div>
+                    <h2>{{titel}}</h2>
+                    <p>{{untertitel}}</p>
+                  </div>
               </div>
-              <h2>{{titel}}</h2>
-              <p>{{untertitel}}</p> 
           </a>
           {{/section}}
       </main>

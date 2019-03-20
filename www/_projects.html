@@ -1,15 +1,35 @@
 {{> head}}
-
+<main class="project-detail">
       {{#section projects}}
          <h1> {{titel}} </h1>
-         {{titelbild type=image}}
+         <div class="coverimage"> 
+                {{titelbild type=image}}
+         </div>
          {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}}
-        {{bild2 type=image}}
-        {{text2 type=html}}
+        {{#if bild1}}
+            {{bild1 type=image required=false}}
+        {{/if}}
+        {{#if text2}}
+            {{text2 type=html required=false}}
+        {{/if}}
+        {{#if bild2}}
+            {{bild2 type=image required=false}}
+        {{/if}}
+        {{#if text3}}
+            {{text3 type=html required=false}}
+        {{/if}}
+      <div> <div>{{#if bild3}}
+            {{bild3 type=image required=false}}
+        {{/if}}</div>
+        <div>{{#if bild4}}
+        {{bild4 type=image required=false}}
+        {{/if}}</div>
+        {{#if bild5}}
+        <div>{{bild5 type=image required=false}}
+        {{/if}}</div> </div> 
       {{/section}}  
-    </body>
-</html>
+</main>
 
 {{> footer}}
