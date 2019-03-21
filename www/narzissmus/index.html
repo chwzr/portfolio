@@ -2,10 +2,17 @@
 <main class="project-narzissmus">
       {{#section narzissmus}}
          <h1> {{titel}} </h1>
-        <div class="img1-narzissmus">
-            {{#if bild1}}
+        <div class="img1-narzissmus"> 
+            <div class="project-item2">
+                   <div class="colorbox2">
+                       {{#if bild1}}
                 {{bild1 type=image required=false}}
-            {{/if}}
+                         {{/if}}
+                        <div> <p>{{untertitel}}</p> </div>
+                    </div> 
+             </div>
+            </div>
+        </div> 
             {{#if bild2}}
                 {{bild2 type=image required=false}}
             {{/if}}   
@@ -49,9 +56,10 @@
             {{#if bild13}}
                 {{bild13 type=image required=false}}
             {{/if}} 
-            {{#if text2}}
+            
+        {{#if text2}}<div>
                 {{text2 type=html required=false}}
-            {{/if}}</div>
+            </div> {{/if}}</div>
       {{/section}}
 </main>
 

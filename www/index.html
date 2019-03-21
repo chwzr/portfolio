@@ -5,6 +5,9 @@
               <div class="colorbox">
                   {{titelbild type=image}}
                   <div>
+                   <div>{{#if number}}
+                        {{number type=html required=false}}
+                    {{/if}}</div> 
                     <h2>{{titel}}</h2>
                     <p>{{untertitel}}</p>
                   </div>
