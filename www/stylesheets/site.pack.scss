@@ -1,6 +1,14 @@
+// Imports
+
 @import url('https://rsms.me/inter/inter.css');
 
+// Variables
+
 $color__yellow: #ebcc03;
+
+$size__grid-gap: 13px;
+
+// Base
 
 *, *:before, *:after {
   margin: 0;
@@ -54,10 +62,11 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-columns: 1fr;
-  grid-gap: 13px;
+  grid-gap: $size__grid-gap;
   max-width: 100%;
 }
+
+// Classes
 
 // inter
 
@@ -88,6 +97,11 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-gap: 13px;
   max-width: 100%;
+}
+
+.video-inter {
+  width: 200%;
+  margin-bottom: 1em;
 }
 
 // prokscheer
@@ -145,8 +159,6 @@ main {
   margin: 2em 0;
 }
 
-
-
 .img2-narzissmus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -164,6 +176,20 @@ main {
     margin: 1em;
   }
   
+}
+
+// Grid with 3 images
+
+.div-image-grid-col3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: $size__grid-gap;
+}
+
+@media (min-width: 1800px) {
+  .div-image-grid-col3 {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
 }
 
 
