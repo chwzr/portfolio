@@ -1,0 +1,41 @@
+{{> head}}
+<main class="project-palucca">
+      {{#section palucca}}
+         <h1> {{titel}} </h1>
+        {{#section palucca2 multiple=true order=number}}
+            {{galleriebild type=image}}
+                <div>{{#if number}}
+                    {{number type=html required=false}}
+                {{/if}}</div>
+        {{/section}}
+       <div class="text-palucca"> {{#if text1}}
+            {{text1 type=html required=false}}
+        {{/if}} </div>
+        {{#section palucca3 multiple=true order=number}}
+            {{galleriebild type=image}}
+                <div>{{#if number}}
+                    {{number type=html required=false}}
+                {{/if}}</div>
+        {{/section}}
+        <div class="text-palucca"> {{#if text1}}
+                {{text2 type=html required=false}}
+            {{/if}} </div>
+        <div class="img-palucca">
+        {{#if bild1}}
+            {{bild1 type=image required=false}}
+        {{/if}}
+        {{#if bild2}}
+            {{bild2 type=image required=false}}
+        {{/if}}
+        </div> 
+        {{#section palucca3 multiple=true order=number}}
+            {{galleriebild type=image}}
+                <div>{{#if number}}
+                    {{number type=html required=false}}
+                {{/if}}</div>
+        {{/section}}
+        
+      {{/section}}  
+</main>
+
+{{> footer}}
