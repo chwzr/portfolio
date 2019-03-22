@@ -1,6 +1,6 @@
 
 {{> head}}
-<main class="project-prokscheer">
+<main class="main-project project-prokscheer">
       {{#section prokscheer}}
          <h1> {{titel}} </h1>
         {{#if bild1}}
@@ -9,7 +9,7 @@
         {{#if bild2}}
             {{bild2 type=image required=false}}
         {{/if}}
-       <div class="text-prokscheer"> {{#if text1}}
+       <div class="text"> {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}} </div>
        <div class="img-prokscheer">{{#if bild3}}

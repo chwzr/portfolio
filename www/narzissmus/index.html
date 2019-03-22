@@ -1,18 +1,14 @@
 {{> head}}
-<main class="project-narzissmus">
+<main class="main-project project-narzissmus">
     {{#section narzissmus2}}
     <h1> {{titel}} </h1>
     <div class="div-image-grid-col3">
-        {{#section narzissmus1 multiple=true order=number}}
+        {{#section narzissmus1 multiple=true sortable=true}}
         <div class="project-item">
             <div class="img1-narzissmus">
                 <div class="colorbox">
                     {{bild type=image}}
                     <div>
-                        <div>{{#if number}}
-                            {{number type=html required=false}}
-                            {{/if}}
-                        </div>
                         <h2>{{postertitel}}</h2>
                         <p>{{untertitel}}</p>
                     </div>
@@ -23,7 +19,7 @@
     </div>
 
     {{#if text1}}
-    <div class="text-narzissmus">
+    <div class="text">
         {{text1 type=html required=false}}
     </div>
     {{/if}}

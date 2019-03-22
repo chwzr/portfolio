@@ -1,11 +1,11 @@
 {{> head}}
-<main class="project-pangram">
+<main class="main-project project-pangram">
       {{#section pangram}}
          <h1> {{titel}} </h1>
         {{#if bild1}}
             {{bild1 type=image required=false}}
         {{/if}}
-       <div class="text-pangram"> {{#if text1}}
+       <div class="text"> {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}} </div>
        {{#if bild2}}

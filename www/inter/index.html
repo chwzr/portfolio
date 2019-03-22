@@ -1,14 +1,30 @@
 {{> head}}
-<main class="project-inter">
+<main class="main-project project-inter">
       {{#section inter}}
          <h1> {{titel}} </h1>
-        {{#section inter2 multiple=true order=number}}
-            {{galleriebild type=image}}
-                <div>{{#if number}}
-                    {{number type=html required=false}}
-                {{/if}}</div>
-        {{/section}}
-       <div class="text-inter"> {{#if text1}}
+         <div class="div-slideshow">
+            {{#section inter2 multiple=true sortable=true}}
+                {{galleriebild type=image class="slide"}}
+            {{/section}}
+            <input type="button" id="input-open-gallery">
+            <label for="input-open-gallery"></label>
+         </div>
+         <div id="div-gallery">
+             <input type="button" id="input-close-gallery">
+             <label id="label-input-close-gallery" for="input-close-gallery"></label>
+             <input type="button" id="input-prev-image">
+             <label id="label-input-prev-image" for="input-prev-image"></label>
+             <input type="button" id="input-next-image">
+             <label id="label-input-next-image" for="input-next-image"></label>
+             <ul>
+                 {{#section inter2 multiple=true sortable=true}}
+                    <li>
+                        {{galleriebild type=image}}
+                    </li>
+                {{/section}}
+             </ul>
+         </div>
+       <div class="text"> {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}} </div>
         <div class="img-inter">
@@ -36,7 +52,7 @@
         {{#if bild9}}
             {{bild9 type=image required=false}}
         {{/if}}</div> 
-        <div class="text-inter"> {{#if text2}}
+        <div class="text"> {{#if text2}}
             {{text2 type=html required=false}}
         {{/if}} </div>  
         <div class="img-inter">
@@ -52,18 +68,34 @@
         {{#if bild13}}
             {{bild13 type=image required=false}}
         {{/if}}</div>  
-        <div class="text-inter"> {{#if text3}}
+        <div class="text"> {{#if text3}}
             {{text3 type=html required=false}}
         {{/if}} </div> 
-        <div class="video-inter">{{video type=link unfurl=true}}
+        <div class="div-video">{{video type=link unfurl=true}}
             </div> 
-        {{#section inter3 multiple=true order=number}}
+        <div class="div-slideshow">        
+        {{#section inter3 multiple=true sortable=true}}
             {{galleriebild type=image}}
-            <div>{{#if number}}
-                    {{number type=html required=false}}
-                {{/if}}</div>
         {{/section}}   
-        <div class="text-inter"> {{#if text4}}
+        <input type="button" id="input-open-gallery">
+        <label for="input-open-gallery"></label>
+     </div>
+     <div id="div-gallery">
+         <input type="button" id="input-close-gallery">
+         <label id="label-input-close-gallery" for="input-close-gallery"></label>
+         <input type="button" id="input-prev-image">
+         <label id="label-input-prev-image" for="input-prev-image"></label>
+         <input type="button" id="input-next-image">
+         <label id="label-input-next-image" for="input-next-image"></label>
+         <ul>
+             {{#section inter2 multiple=true sortable=true}}
+                <li>
+                    {{galleriebild type=image}}
+                </li>
+            {{/section}}
+         </ul>
+     </div>
+        <div class="text"> {{#if text4}}
             {{text4 type=html required=false}}
         {{/if}} </div>
         <div class="img-inter">

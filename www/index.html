@@ -1,13 +1,10 @@
 {{> head}}
       <main>
-          {{#section projects multiple=true order=number}}
+          {{#section projects multiple=true sortable=true}}
           <a href="{{link}}" class="project-item">
               <div class="colorbox">
                   {{titelbild type=image}}
                   <div>
-                   <div>{{#if number}}
-                        {{number type=html required=false}}
-                    {{/if}}</div> 
                     <h2>{{titel}}</h2>
                     <p>{{untertitel}}</p>
                   </div>

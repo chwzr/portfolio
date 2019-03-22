@@ -5,7 +5,6 @@
 // Variables
 
 $color__yellow: #ebcc03;
-
 $size__grid-gap: 13px;
 
 // Base
@@ -17,6 +16,7 @@ $size__grid-gap: 13px;
 }
 
 html {
+  color: #000;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 16pt;
@@ -68,336 +68,6 @@ main {
 
 // Classes
 
-// inter
-
-.project-inter {
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
- 
-  h1 {
-    font-size: 3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
-.text-inter {
-  max-width: 65%;
-  margin: 2em 0;
-}
-
-.img-inter {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 13px;
-  max-width: 100%;
-}
-
-.video-inter {
-  width: 200%;
-  margin-bottom: 1em;
-}
-
-// prokscheer
-
-.project-prokscheer {
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
- 
-  h1 {
-    font-size: 3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
-.text-prokscheer {
-  max-width: 65%;
-  margin: 2em 0;
-}
-
-.img-prokscheer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 13px;
-  max-width: 100%;
-}
-
-// narzissmus
-
-.project-narzissmus {
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
- 
-  h1 {
-    font-size: 3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
-.text-narzissmus {
-  max-width: 65%;
-  margin: 2em 0;
-}
-
-.img2-narzissmus {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 13px;
-  max-width: 100%;
-}
-
-.img3-narzissmus {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 13px;
-  max-width: 100%;
-  div {
-    align-self: end;
-    margin: 1em;
-  }
-  
-}
-
-// Grid with 3 images
-
-.div-image-grid-col3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: $size__grid-gap;
-}
-
-@media (min-width: 1800px) {
-  .div-image-grid-col3 {
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-  }
-}
-
-
-.project-item2 {
-
-  .img1-narzissmus {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 13px;
-    max-width: 100%;
-
-    .colorbox2 {
-
-    position: relative;
-    background: $color__yellow;
-
-    &:hover {
-      img {
-        opacity: .1;
-      }
-
-      div {
-        opacity: 1;
-        div {
-          opacity: 0;
-        }
-      }
-    }
-
-    img {
-      width: 100%;
-      display: block;
-    }
-
-    div {
-      bottom: 1.2em;
-      left: 1.4em;
-      position: absolute;
-      opacity: 0;
-    }
-
-    h2, p {
-      margin: 0;
-      font-size: 1.2em;
-      color: #000;
-    }
-
-    p {
-      font-size: .9em;
-      margin-top: .4em;
-      margin-bottom: .4em;
-      margin-right: 2em;
-      font-weight: 400;
-      font-style: oblique;
-    }
-    }
-  }
-
-}
-
-// metaphoro
-
-.project-metaphoro {
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
- 
-  h1 {
-    font-size: 3em;
-  }
- 
-  img {
-    width: 95%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
-.text-metaphoro {
-  max-width: 65%;
-  margin: 2em 0;
-}
-
-.video-metaphoro {
-  width: 150%;
-  margin: 1.5em 0;
-}
-
-// napapp
-
-.project-napapp {
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
- 
-  h1 {
-    font-size: 3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
-.text-napapp {
-  max-width: 65%;
-  margin: 2em 0;
-}
-
-.img-napapp {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 13px;
-  max-width: 100%;
-}
-
-// pangram
-
-.project-pangram {
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
- 
-  h1 {
-    font-size: 3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
-.text-pangram {
-  max-width: 65%;
-  margin: 2em 0;
-}
-
-.img-pangram {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 13px;
-  max-width: 100%;
-}
-
-// home2ocean
-
-.project-home2ocean {
-  display: flex;
-  flex-direction: column;
-  font-size: .75em;
- 
-  h1 {
-    font-size: 3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-}
-
-.text-home2ocean {
-  max-width: 65%;
-  margin: 2em 0;
-}
-
-.img-home2ocean {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 13px;
-  max-width: 100%;
-}
-
-.video-home2ocean {
-  width: 150%;
-  margin: 1.5em 0 0 0;
-}
-
-// ende der projekte
-
-footer {
-  margin-top: 6em;
-  margin-left: auto;
-
-  ul {
-    list-style: none;
-    display: flex;
-    font-size: .8em;
-
-    li {
-      margin: 0 1.5em;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
 // startseite 
 
 .project-item {
@@ -440,8 +110,343 @@ footer {
       font-size: .7em;
       margin-top: .4em;
       margin-bottom: 0;
+      margin-right: 2em;
       font-weight: 400;
       font-style: oblique;
+    }
+  }
+}
+
+// inter
+
+.project-inter {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.img-inter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+// prokscheer
+
+.project-prokscheer {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.img-prokscheer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+// narzissmus
+
+.project-narzissmus {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.img2-narzissmus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+.img3-narzissmus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+  div {
+    align-self: end;
+    margin: 1em;
+  }
+  
+}
+
+// Grid with 3 images
+
+.div-image-grid-col3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: $size__grid-gap;
+  
+  .colorbox h2 {
+    font-size: 1em;
+  }
+
+  .colorbox p {
+    font-size: .9em;
+  }
+
+  .colorbox:hover img {
+    opacity: .1;
+  }
+}
+
+// metaphoro
+
+.project-metaphoro {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+ 
+  img {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+// napapp
+
+.project-napapp {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.img-napapp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+// pangram
+
+.project-pangram {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.img-pangram {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+// home2ocean
+
+.project-home2ocean {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.img-home2ocean {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+// Video container
+
+.div-video {
+  position: relative;
+  margin: 1.5em 0;
+  padding-bottom: 56.25%;
+
+  iframe {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Gallery Slideshow
+
+.div-slideshow {
+  position: relative;
+
+  input {
+    display: none;
+  }
+
+  label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+  }
+}
+
+#div-gallery {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 1;
+  display: none;
+
+  input {
+    display: none;
+  }
+
+  label {
+    margin: 0;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+    border-radius: 50%;
+  }
+
+  li {
+    top: 50%;
+    position: absolute;
+    display: none;
+    transform: translateY(-50%);
+  }
+
+  img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    display: block;
+    object-fit: contain;
+  }
+
+  .li-image-visible {
+    display: block;
+  }
+}
+
+#label-input-close-gallery {
+  top: 5vh;
+  right: 5vh;
+  background: $color__yellow;
+}
+
+#label-input-prev-image {
+  top: 50%;
+  left: 5vh;
+  background: $color__yellow;
+  transform: translateY(-50%);
+}
+
+#label-input-next-image {
+  top: 50%;
+  right: 5vh;
+  background: $color__yellow;
+  transform: translateY(-50%);
+}
+
+// ende der projekte
+
+footer {
+  margin-top: 6em;
+  margin-left: auto;
+
+  ul {
+    list-style: none;
+    display: flex;
+    font-size: .8em;
+
+    li {
+      margin: 0 1.5em;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -450,6 +455,8 @@ footer {
 
 @media (min-width: 801px) {
   header {
+    position: -webkit-sticky;
+    position: sticky;
     width: 25%;
   }
 
@@ -458,4 +465,15 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  .main-project .text {
+    max-width: 65%;
+    margin: 2em 0;
+  }
+
+}
+
+@media (min-width: 1800px) {
+  .div-image-grid-col3 {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
 }

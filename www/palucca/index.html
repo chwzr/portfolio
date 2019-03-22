@@ -1,5 +1,5 @@
 {{> head}}
-<main class="project-palucca">
+<main class=" main-project project-palucca">
       {{#section palucca}}
          <h1> {{titel}} </h1>
         {{#section palucca2 multiple=true order=number}}
@@ -8,7 +8,7 @@
                     {{number type=html required=false}}
                 {{/if}}</div>
         {{/section}}
-       <div class="text-palucca"> {{#if text1}}
+       <div class="text"> {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}} </div>
         {{#section palucca3 multiple=true order=number}}
@@ -17,7 +17,7 @@
                     {{number type=html required=false}}
                 {{/if}}</div>
         {{/section}}
-        <div class="text-palucca"> {{#if text1}}
+        <div class="text"> {{#if text1}}
                 {{text2 type=html required=false}}
             {{/if}} </div>
         <div class="img-palucca">
