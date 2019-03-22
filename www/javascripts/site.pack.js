@@ -25,7 +25,7 @@ var slideshow = function() {
 
     slides[count - 1].setAttribute("style", "display: block;");
 
-    setTimeout(slideshow, 5000);
+    setTimeout(slideshow, 2000);
 }
 
 var count = 0;

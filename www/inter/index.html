@@ -73,28 +73,28 @@
         {{/if}} </div> 
         <div class="div-video">{{video type=link unfurl=true}}
             </div> 
-        <div class="div-slideshow">        
-        {{#section inter3 multiple=true sortable=true}}
-            {{galleriebild type=image}}
-        {{/section}}   
-        <input type="button" id="input-open-gallery">
-        <label for="input-open-gallery"></label>
-     </div>
-     <div id="div-gallery">
-         <input type="button" id="input-close-gallery">
-         <label id="label-input-close-gallery" for="input-close-gallery"></label>
-         <input type="button" id="input-prev-image">
-         <label id="label-input-prev-image" for="input-prev-image"></label>
-         <input type="button" id="input-next-image">
-         <label id="label-input-next-image" for="input-next-image"></label>
-         <ul>
-             {{#section inter2 multiple=true sortable=true}}
-                <li>
-                    {{galleriebild type=image}}
-                </li>
-            {{/section}}
-         </ul>
-     </div>
+            <div class="div-slideshow">
+                    {{#section inter3 multiple=true sortable=true}}
+                        {{galleriebild type=image class="slide"}}
+                    {{/section}}
+                    <input type="button" id="input-open-gallery">
+                    <label for="input-open-gallery"></label>
+                 </div>
+                 <div id="div-gallery">
+                     <input type="button" id="input-close-gallery">
+                     <label id="label-input-close-gallery" for="input-close-gallery"></label>
+                     <input type="button" id="input-prev-image">
+                     <label id="label-input-prev-image" for="input-prev-image"></label>
+                     <input type="button" id="input-next-image">
+                     <label id="label-input-next-image" for="input-next-image"></label>
+                     <ul>
+                         {{#section inter3 multiple=true sortable=true}}
+                            <li>
+                                {{galleriebild type=image}}
+                            </li>
+                        {{/section}}
+                     </ul>
+                 </div>
         <div class="text"> {{#if text4}}
             {{text4 type=html required=false}}
         {{/if}} </div>
