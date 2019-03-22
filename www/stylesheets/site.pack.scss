@@ -145,6 +145,44 @@ main {
   max-width: 100%;
 }
 
+// cloud
+
+.project-cloud {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+// palucca
+
+.project-palucca {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
 // prokscheer
 
 .project-prokscheer {
@@ -416,20 +454,29 @@ main {
 #label-input-close-gallery {
   top: 5vh;
   right: 5vh;
-  background: $color__yellow;
+  background: white;
+  &:hover {
+    background-color: $color__yellow;
+  }
 }
 
 #label-input-prev-image {
   top: 50%;
   left: 5vh;
-  background: $color__yellow;
+  background: white;
+  &:hover {
+    background-color: $color__yellow;
+  }
   transform: translateY(-50%);
 }
 
 #label-input-next-image {
   top: 50%;
   right: 5vh;
-  background: $color__yellow;
+  background: white;
+  &:hover {
+    background-color: $color__yellow;
+  }
   transform: translateY(-50%);
 }
 
@@ -438,9 +485,23 @@ main {
 
 // about
 
-.about-text {
-  max-width: 65%;
-  margin: 2em 0;
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
 }
 
 

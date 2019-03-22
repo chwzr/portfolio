@@ -1,13 +1,16 @@
 {{> head}}
-<main class="main-project">
+<main class="main-project about"></main>
 {{#section about}}
          <h1> {{titel}} </h1>
          {{titelbild type=image width=800 alt="titelbild"}}
-         <div class="about-text">
-               {{#if text1}}
+            <div class="text">
+            {{#if text1}}    
                {{text1 type=html required=false}}
-           {{/if}} 
-         </div>   
+            {{/if}} 
+            {{#if text2}}
+               {{text2 type=html required=false}}
+            {{/if}}  
+            </div>   
    {{/section}}
 </main>   
 {{> footer}}

@@ -1,9 +1,9 @@
 {{> head}}
-<main class=" main-project project-palucca">
-      {{#section palucca}}
+<main class=" main-project project-cloud">
+      {{#section cloud}}
          <h1> {{titel}} </h1>
          <div class="div-slideshow"> 
-        {{#section palucca2 multiple=true sortable=true}}
+        {{#section cloud2 multiple=true sortable=true}}
             {{galleriebild type=image class="slide"}}
         {{/section}}
         <input type="button" id="input-open-gallery">
@@ -17,7 +17,7 @@
              <input type="button" id="input-next-image">
              <label id="label-input-next-image" for="input-next-image"></label>
              <ul>
-                 {{#section palucca2 multiple=true sortable=true}}
+                 {{#section cloud2 multiple=true sortable=true}}
                     <li>
                         {{galleriebild type=image}}
                     </li>
@@ -28,7 +28,7 @@
             {{text1 type=html required=false}}
         {{/if}} </div>
         <div class="div-slideshow">
-        {{#section palucca3 multiple=true sortable=true}}
+        {{#section cloud3 multiple=true sortable=true}}
             {{galleriebild type=image class="slide"}}
         {{/section}}
         <input type="button" id="input-open-gallery">
@@ -42,7 +42,7 @@
              <input type="button" id="input-next-image">
              <label id="label-input-next-image" for="input-next-image"></label>
              <ul>
-                 {{#section palucca3 multiple=true sortable=true}}
+                 {{#section cloud3 multiple=true sortable=true}}
                     <li>
                         {{galleriebild type=image}}
                     </li>
@@ -51,16 +51,11 @@
          </div>
         <div class="text"> {{#if text2}}
                 {{text2 type=html required=false}}
-            {{/if}} </div>
-        <div class="img-palucca">
-        {{#if bild1}}
-            {{bild1 type=image required=false}}
-        {{/if}}
-        </div> 
-        {{#section palucca4 multiple=true sortable=true}}
-            {{galleriebild type=image}}
-        {{/section}}
-        
+            {{/if}} 
+        </div>
+        <div class="text">  {{#if text3}}
+                {{text3 type=html required=false}}
+            {{/if}}</div>
       {{/section}}  
 </main>
 
