@@ -2,9 +2,12 @@
 <main class="project-inter">
       {{#section inter}}
          <h1> {{titel}} </h1>
-        {{#if bild1}}
-            {{bild1 type=image required=false}}
-        {{/if}}
+        {{#section inter2 multiple=true order=number}}
+            {{galleriebild type=image}}
+                <div>{{#if number}}
+                    {{number type=html required=false}}
+                {{/if}}</div>
+        {{/section}}
        <div class="text-inter"> {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}} </div>
@@ -54,12 +57,12 @@
         {{/if}} </div> 
         <div class="video-inter">{{video type=link unfurl=true}}
             </div> 
-        {{#if bild14}}
-            {{bild14 type=image required=false}}
-        {{/if}}
-        {{#if bild15}}
-            {{bild15 type=image required=false}}
-        {{/if}} 
+        {{#section inter3 multiple=true order=number}}
+            {{galleriebild type=image}}
+            <div>{{#if number}}
+                    {{number type=html required=false}}
+                {{/if}}</div>
+        {{/section}}   
         <div class="text-inter"> {{#if text4}}
             {{text4 type=html required=false}}
         {{/if}} </div>
