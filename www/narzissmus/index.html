@@ -1,11 +1,12 @@
 {{> head}}
 <main class="project-narzissmus">
     {{#section narzissmus2}}
-        <h1> {{titel}} </h1>
-    {{#section narzissmus1 multiple=true order=number}}
-        <div class="project-item2">
+    <h1> {{titel}} </h1>
+    <div class="div-image-grid-col3">
+        {{#section narzissmus1 multiple=true order=number}}
+        <div class="project-item">
             <div class="img1-narzissmus">
-                <div class="colorbox2">
+                <div class="colorbox">
                     {{bild type=image}}
                     <div>
                         <div>{{#if number}}
@@ -18,41 +19,42 @@
                 </div>
             </div>
         </div>
-    {{/section}} 
+        {{/section}}
+    </div>
 
-            {{#if text1}}
-        <div class="text-narzissmus">
-                {{text1 type=html required=false}}
-            </div>
-            {{/if}}
-         <div class="img2-narzissmus">
-            {{#if bild7}}
-                {{bild7 type=image required=false}}
-            {{/if}}
-            {{#if bild8}}
-                {{bild8 type=image required=false}}
-            {{/if}}   
-            {{#if bild9}}
-                {{bild9 type=image required=false}}
-            {{/if}}
-            {{#if bild10}}
-                {{bild10 type=image required=false}}
-            {{/if}}
-            {{#if bild11}}
-                {{bild11 type=image required=false}}
-             {{/if}}</div>
-        <div class="img3-narzissmus">
-             {{#if bild12}}
-                {{bild12 type=image required=false}}
-             {{/if}}
-            {{#if bild13}}
-                {{bild13 type=image required=false}}
-            {{/if}} 
-            
+    {{#if text1}}
+    <div class="text-narzissmus">
+        {{text1 type=html required=false}}
+    </div>
+    {{/if}}
+    <div class="img2-narzissmus">
+        {{#if bild7}}
+        {{bild7 type=image required=false}}
+        {{/if}}
+        {{#if bild8}}
+        {{bild8 type=image required=false}}
+        {{/if}}
+        {{#if bild9}}
+        {{bild9 type=image required=false}}
+        {{/if}}
+        {{#if bild10}}
+        {{bild10 type=image required=false}}
+        {{/if}}
+        {{#if bild11}}
+        {{bild11 type=image required=false}}
+        {{/if}}</div>
+    <div class="img3-narzissmus">
+        {{#if bild12}}
+        {{bild12 type=image required=false}}
+        {{/if}}
+        {{#if bild13}}
+        {{bild13 type=image required=false}}
+        {{/if}}
+
         {{#if text2}}<div>
-                {{text2 type=html required=false}}
-            </div> {{/if}}</div>
-      {{/section}}
+            {{text2 type=html required=false}}
+        </div> {{/if}}</div>
+    {{/section}}
 </main>
 
 {{> footer}}
