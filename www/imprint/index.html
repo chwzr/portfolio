@@ -1,8 +1,29 @@
 {{> head}}
-<main class="main-project">
+<main class="main-project imprint">
 {{#section imprint}}
          <h1> {{titel}} </h1>
-        {{text1 type=html}}
+         <div class="text">
+            <h2> {{titel0}} </h2>
+            {{#if text0}}    
+               {{text0 type=html required=false}}
+            {{/if}} 
+            <h2> {{titel1}} </h2>
+            {{#if text1}}    
+               {{text1 type=html required=false}}
+            {{/if}} 
+            <h2> {{titel2}} </h2>
+            {{#if text2}}    
+               {{text2 type=html required=false}}
+            {{/if}} 
+            <h2> {{titel3}} </h2>
+            {{#if text3}}    
+               {{text3 type=html required=false}}
+            {{/if}} 
+            <h2> {{titel4}} </h2>
+            {{#if text4}}    
+               {{text4 type=html required=false}}
+            {{/if}} 
+         </div>
    {{/section}}
 </main>   
 {{> footer}}

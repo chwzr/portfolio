@@ -247,6 +247,28 @@ main {
   
 }
 
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: grab;
+}
+
+// The actual popup (appears on top)
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
 // grid with 3 images
 
 .div-image-grid-col3 {
@@ -402,6 +424,7 @@ main {
   .slide {
     display: none;
     width: 100%;
+   // height: 90vh;
   }
 }
 
@@ -499,11 +522,35 @@ main {
   img {
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
     margin: 1em 0;
+  }
+
+  text {
+    margin: 1em;
   }
 }
 
+.imprint {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+    margin-bottom: -1em;
+  }
+}
+
+.privacy {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+}
 
 footer {
   margin-top: 6em;
@@ -541,6 +588,16 @@ footer {
   .main-project .text {
     max-width: 65%;
     margin: 2em 0;
+
+    h1 {
+      margin-bottom: 3em;
+    }
+
+    h2 {
+      font-size: 16pt;
+      margin: 2em 0 1em 0;
+    }
+
   }
 
 }

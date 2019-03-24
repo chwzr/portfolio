@@ -1,6 +1,12 @@
 {{> head}}
-{{#section privacy}}
+<main class="main-project privacy">
+      {{#section privacy}}
          <h1> {{titel}} </h1>
-        {{text1 type=html}}
+         <div class="text">
+               {{#if text1}}    
+                  {{text1 type=html required=false}}
+               {{/if}} 
+         </div>  
    {{/section}}
+</main>
 {{> footer}}
