@@ -4,7 +4,7 @@
          <h1> {{titel}} </h1>
          <div class="div-slideshow"> 
         {{#section cloud2 multiple=true sortable=true}}
-            {{galleriebild type=image class="slide"}}
+            {{galleriebild type=image class="slide" width=3000 height=2000}}
         {{/section}}
         <input type="button" id="input-open-gallery">
             <label for="input-open-gallery"></label>
@@ -13,9 +13,17 @@
              <input type="button" id="input-close-gallery">
              <label id="label-input-close-gallery" for="input-close-gallery"></label>
              <input type="button" id="input-prev-image">
-             <label id="label-input-prev-image" for="input-prev-image"></label>
+             <label id="label-input-prev-image" for="input-prev-image">
+                <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                    <path d="M28,0 L 0,18 L 28,36"></path>
+                </svg>
+             </label>
              <input type="button" id="input-next-image">
-             <label id="label-input-next-image" for="input-next-image"></label>
+             <label id="label-input-next-image" for="input-next-image">
+                <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                    <path d="M0,0 L 28,18 L 0,36"></path>
+                </svg>
+             </label>
              <ul>
                  {{#section cloud2 multiple=true sortable=true}}
                     <li>
