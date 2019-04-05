@@ -420,6 +420,8 @@ main {
   background: #000;
   z-index: 1;
   display: none;
+  user-select: none;
+  -moz-user-select: none;
 
   input {
     display: none;
@@ -433,7 +435,14 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
-    border-radius: 50%;
+
+    svg path {
+      fill: #fff;
+    }
+
+    &:hover svg path {
+      fill: $color__yellow;
+    }
   }
 
   li {
@@ -461,29 +470,22 @@ main {
   top: 5vh;
   right: 5vh;
   background: white;
+  border-radius: 50%;
   &:hover {
     background-color: $color__yellow;
   }
+}
+
+#label-input-prev-image, #label-input-next-image {
+  bottom: 5vh;
 }
 
 #label-input-prev-image {
-  top: 50%;
   left: 5vh;
-  background: white;
-  &:hover {
-    background-color: $color__yellow;
-  }
-  transform: translateY(-50%);
 }
 
 #label-input-next-image {
-  top: 50%;
   right: 5vh;
-  background: white;
-  &:hover {
-    background-color: $color__yellow;
-  }
-  transform: translateY(-50%);
 }
 
 
@@ -516,8 +518,12 @@ main {
     margin: 1em 0;
   }
 
-  text {
+  .text {
     margin: 1em;
+
+    p {
+      margin-bottom: 1em;
+    }
   }
 }
 
@@ -544,19 +550,13 @@ main {
 
 footer {
   margin-top: 6em;
-  margin-left: auto;
 
   ul {
     list-style: none;
-    display: flex;
     font-size: .8em;
 
     li {
-      margin: 0 1.5em;
-
-      &:last-child {
-        margin-right: 0;
-      }
+      margin: .5em 0;
     }
   }
 }
@@ -584,6 +584,24 @@ footer {
   }
 }
 
+@media (min-width: 601px) {
+  footer {
+    margin-left: auto;
+    
+    ul {
+      display: flex;
+
+      li {
+        margin: 0 1.5em;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 801px) {
   header {
     position: fixed;
@@ -595,6 +613,11 @@ footer {
     margin-left: 25%;
     width: 75%;
     grid-template-columns: 1fr 1fr;
+  }
+
+  #label-input-prev-image, #label-input-next-image {
+    bottom: 50%;
+    transform: translateY(50%);
   }
 
   .main-project .text {
