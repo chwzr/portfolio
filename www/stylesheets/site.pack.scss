@@ -5,6 +5,8 @@
 // variables
 
 $color__yellow: #ebcc03;
+$color__orange: #d85509;
+$color__rosa: #fef6f2;
 $size__grid-gap: 13px;
 
 // base
@@ -38,6 +40,11 @@ header {
 
   h1 {
     font-size: 1.5em;
+    a {
+      &:hover {
+        color: $color__orange;
+      }
+    }
   }
 
   h2 {
@@ -51,6 +58,10 @@ header {
     li {
       margin-bottom: .3em;
     }
+  }
+
+  div {
+    background-color: $color__rosa;
   }
 }
 
@@ -314,6 +325,25 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 13px;
   max-width: 100%;
+}
+
+// gestaltung
+
+.project-gestaltung {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
 }
 
 // pangram

@@ -1,0 +1,17 @@
+{{> head}}
+<main class=" main-project project-gestaltung">
+      {{#section gestaltung}}
+         <h1> {{titel}} </h1>
+       <div class="text"> {{#if text1}}
+            {{text1 type=html required=false}}
+        {{/if}} </div>
+       {{#if bild1}}
+            {{bild1 type=image required=false}}
+        {{/if}}
+        <div class="next-project">
+            <a href="pangram">next project</a>
+        </div>
+      {{/section}}  
+</main>
+
+{{> footer}}

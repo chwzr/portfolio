@@ -39,9 +39,11 @@ document.getElementById("input-close-gallery").onclick = closeGallery;
 document.getElementById("input-prev-image").onclick = showPrevImage;
 document.getElementById("input-next-image").onclick = showNextImage;
 
-var divGallery = document.getElementById("div-gallery");
+var divGallery;
 
 function showGallery() {
+    
+
     divGallery.style.display = "block";
 
     var images = divGallery.getElementsByTagName("li");
