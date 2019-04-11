@@ -5,9 +5,29 @@
        <div class="text"> {{#if text1}}
             {{text1 type=html required=false}}
         {{/if}} </div>
-       {{#if bild1}}
-            {{bild1 type=image required=false}}
-        {{/if}}
+
+        
+          {{#section gestaltung2 multiple=true sortable=true}}
+          <div class="project-item">
+              <div class="img-gestaltung">
+                  <div class="colorbox">
+                      {{bild type=image}}
+                  </div>
+              </div>
+          </div>
+          {{/section}}
+          <div class="div-image-grid-col3">
+            {{#section gestaltung3 multiple=true sortable=true}}
+            <div class="project-item">
+                <div class="img-gestaltung">
+                    <div class="colorbox">
+                        {{bild type=image}}
+                    </div>
+                </div>
+            </div>
+            {{/section}}
+        </div>
+
         <div class="next-project">
             <a href="pangram">next project</a>
         </div>

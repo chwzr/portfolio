@@ -671,4 +671,7 @@ footer {
   .div-image-grid-col3 {
     grid-template-columns: repeat(3, minmax(300px, 1fr));
   }
+  .div-image-grid-col2 {
+    grid-template-columns: repeat(4, minmax(600px, 1fr));
+  }
 }
