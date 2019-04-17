@@ -3,7 +3,7 @@
     {{#section narzissmus2}}
     <h1> {{titel}} </h1>
     <div class="div-image-grid-col3">
-        {{#section narzissmus1 multiple=true sortable=true}}
+        {{#section narzissmus1 multiple=true sortable=false}}
         <div class="project-item">
             <div class="img1-narzissmus">
                 <div class="colorbox">
@@ -12,11 +12,38 @@
                         <h2>{{postertitel}}</h2>
                         <p>{{untertitel}}</p>
                     </div>
+                    <input type="button" id="input-open-gallery-{{id}}" class="input-open-gallery" data-gallery="0" data-image="{{id}}">
+                    <label for="input-open-gallery-{{id}}"></label>
                 </div>
             </div>
         </div>
         {{/section}}
     </div>
+
+    <div id="div-gallery-0" class="div-gallery">
+        <input type="button" id="input-close-gallery-0" class="input-close-gallery">
+        <label class="label-input-close-gallery" for="input-close-gallery-0"></label>
+        <input type="button" id="input-prev-image-0" class="input-prev-image">
+        <label class="label-input-prev-image" for="input-prev-image-0">
+           <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+               <path d="M28,0 L 0,18 L 28,36"></path>
+           </svg>
+        </label>
+        <input type="button" id="input-next-image-0" class="input-next-image">
+        <label class="label-input-next-image" for="input-next-image-0">
+           <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+               <path d="M0,0 L 28,18 L 0,36"></path>
+           </svg>
+        </label>
+        <ul>
+            {{#section narzissmus1 multiple=true}}
+            <li>
+                {{bild type=image}}
+            </li>
+            {{/section}}
+        </ul>
+    </div>
+
     {{#if text1}}
     <div class="text">
         {{text1 type=html required=false}}
