@@ -1,115 +1,155 @@
 {{> head}}
 <main class="main-project project-inter">
-      {{#section inter}}
-         <h1> {{titel}} </h1>
-         <div class="div-slideshow">
+    {{#section inter}}
+    <h1> {{titel}} </h1>
+
+    <!-- BEGIN Slideshow 0 -->
+
+    <div class="div-slideshow">
+        {{#section inter2 multiple=true sortable=true}}
+            {{galleriebild type=image class="slide"}}
+        {{/section}}
+
+        <input type="button" id="input-open-gallery-0" class="input-open-gallery" data-gallery="0" data-image="0">
+        <label for="input-open-gallery-0"></label>
+    </div>
+
+    <!-- END Slideshow 0 -->
+
+    <!-- BEGIN Image Gallery 0 -->
+
+    <div id="div-gallery-0" class="div-gallery">
+        <input type="button" id="input-close-gallery-0" class="input-close-gallery">
+        <label class="label-input-close-gallery" for="input-close-gallery-0"></label>
+        <input type="button" id="input-prev-image-0" class="input-prev-image">
+        <label class="label-input-prev-image" for="input-prev-image-0">
+            <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                <path d="M28,0 L 0,18 L 28,36"></path>
+            </svg>
+        </label>
+        <input type="button" id="input-next-image-0" class="input-next-image">
+        <label class="label-input-next-image" for="input-next-image-0">
+            <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                <path d="M0,0 L 28,18 L 0,36"></path>
+            </svg>
+        </label>
+        <ul>
             {{#section inter2 multiple=true sortable=true}}
-                {{galleriebild type=image class="slide"}}
+            <li>
+                {{galleriebild type=image}}
+            </li>
             {{/section}}
-            <input type="button" id="input-open-gallery">
-            <label for="input-open-gallery"></label>
-         </div>
-         <div id="div-gallery">
-             <input type="button" id="input-close-gallery">
-             <label id="label-input-close-gallery" for="input-close-gallery"></label>
-             <input type="button" id="input-prev-image">
-             <label id="label-input-prev-image" for="input-prev-image"></label>
-             <input type="button" id="input-next-image">
-             <label id="label-input-next-image" for="input-next-image"></label>
-             <ul>
-                 {{#section inter2 multiple=true sortable=true}}
-                    <li>
-                        {{galleriebild type=image}}
-                    </li>
-                {{/section}}
-             </ul>
-         </div>
-       <div class="text"> {{#if text1}}
-            {{text1 type=html required=false}}
+        </ul>
+    </div>
+
+    <!-- END Image Gallery 0 -->
+
+    <div class="text"> {{#if text1}}
+        {{text1 type=html required=false}}
         {{/if}} </div>
-        <div class="img-inter">
+    <div class="img-inter">
         {{#if bild2}}
-            {{bild2 type=image required=false}}
-        {{/if}}   
+        {{bild2 type=image required=false}}
+        {{/if}}
         {{#if bild3}}
-            {{bild3 type=image required=false}}
+        {{bild3 type=image required=false}}
         {{/if}}
         {{#if bild4}}
-            {{bild4 type=image required=false}}
+        {{bild4 type=image required=false}}
         {{/if}}
         {{#if bild5}}
-            {{bild5 type=image required=false}}
+        {{bild5 type=image required=false}}
         {{/if}}
         {{#if bild6}}
-            {{bild6 type=image required=false}}
-        {{/if}}   
+        {{bild6 type=image required=false}}
+        {{/if}}
         {{#if bild7}}
-            {{bild7 type=image required=false}}
+        {{bild7 type=image required=false}}
         {{/if}}
         {{#if bild8}}
-            {{bild8 type=image required=false}}
+        {{bild8 type=image required=false}}
         {{/if}}
         {{#if bild9}}
-            {{bild9 type=image required=false}}
-        {{/if}}</div> 
-        <div class="text"> {{#if text2}}
-            {{text2 type=html required=false}}
-        {{/if}} </div>  
-        <div class="img-inter">
+        {{bild9 type=image required=false}}
+        {{/if}}</div>
+    <div class="text"> {{#if text2}}
+        {{text2 type=html required=false}}
+        {{/if}} </div>
+    <div class="img-inter">
         {{#if bild10}}
-            {{bild10 type=image required=false}}
-        {{/if}}   
+        {{bild10 type=image required=false}}
+        {{/if}}
         {{#if bild11}}
-            {{bild11 type=image required=false}}
+        {{bild11 type=image required=false}}
         {{/if}}
         {{#if bild12}}
-            {{bild12 type=image required=false}}
+        {{bild12 type=image required=false}}
         {{/if}}
         {{#if bild13}}
-            {{bild13 type=image required=false}}
-        {{/if}}</div>  
-        <div class="text"> {{#if text3}}
-            {{text3 type=html required=false}}
-        {{/if}} </div> 
-        <div class="div-video">{{video type=link unfurl=true}}
-            </div> 
-            <div class="div-slideshow">
-                    {{#section inter3 multiple=true sortable=true}}
-                        {{galleriebild type=image class="slide"}}
-                    {{/section}}
-                    <input type="button" id="input-open-gallery">
-                    <label for="input-open-gallery"></label>
-                 </div>
-                 <div id="div-gallery">
-                     <input type="button" id="input-close-gallery">
-                     <label id="label-input-close-gallery" for="input-close-gallery"></label>
-                     <input type="button" id="input-prev-image">
-                     <label id="label-input-prev-image" for="input-prev-image"></label>
-                     <input type="button" id="input-next-image">
-                     <label id="label-input-next-image" for="input-next-image"></label>
-                     <ul>
-                         {{#section inter3 multiple=true sortable=true}}
-                            <li>
-                                {{galleriebild type=image}}
-                            </li>
-                        {{/section}}
-                     </ul>
-                 </div>
-        <div class="text"> {{#if text4}}
-            {{text4 type=html required=false}}
+        {{bild13 type=image required=false}}
+        {{/if}}</div>
+    <div class="text"> {{#if text3}}
+        {{text3 type=html required=false}}
         {{/if}} </div>
-        <div class="img-inter">
-            {{#if bild16}}
-                {{bild16 type=image required=false}}
-            {{/if}}   
-            {{#if bild17}}
-                {{bild17 type=image required=false}}
-            {{/if}}
-        </div>
-        <div class="next-project">
-                <a href="cloud">next project</a>
-                </div>
-      {{/section}}  
+    <div class="div-video">{{video type=link unfurl=true}}
+    </div>
+
+    <!-- BEGIN Slideshow 1 -->
+
+    <div class="div-slideshow">
+        {{#section inter3 multiple=true sortable=true}}
+            {{galleriebild type=image class="slide"}}
+        {{/section}}
+
+        <input type="button" id="input-open-gallery-1" class="input-open-gallery" data-gallery="1" data-image="0">
+        <label for="input-open-gallery-1"></label>
+    </div>
+
+    <!-- END Slideshow 1 -->
+
+    <!-- BEGIN Image Gallery 1 -->
+
+    <div id="div-gallery-1" class="div-gallery">
+        <input type="button" id="input-close-gallery-1" class="input-close-gallery">
+        <label class="label-input-close-gallery" for="input-close-gallery-1"></label>
+        <input type="button" id="input-prev-image-1" class="input-prev-image">
+        <label class="label-input-prev-image" for="input-prev-image-1">
+            <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                <path d="M28,0 L 0,18 L 28,36"></path>
+            </svg>
+        </label>
+        <input type="button" id="input-next-image-1" class="input-next-image">
+        <label class="label-input-next-image" for="input-next-image-1">
+            <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                <path d="M0,0 L 28,18 L 0,36"></path>
+            </svg>
+        </label>
+        <ul>
+            {{#section inter3 multiple=true sortable=true}}
+            <li>
+                {{galleriebild type=image}}
+            </li>
+            {{/section}}
+        </ul>
+    </div>
+
+    <!-- END Image Gallery 1 -->
+
+    <div class="text"> {{#if text4}}
+        {{text4 type=html required=false}}
+        {{/if}} </div>
+    <div class="img-inter">
+        {{#if bild16}}
+        {{bild16 type=image required=false}}
+        {{/if}}
+        {{#if bild17}}
+        {{bild17 type=image required=false}}
+        {{/if}}
+    </div>
+    <div class="next-project">
+        <a href="cloud">next project</a>
+    </div>
+    {{/section}}
 </main>
 
 {{> footer}}
