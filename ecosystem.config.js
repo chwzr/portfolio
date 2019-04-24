@@ -2,6 +2,7 @@ module.exports = {
   apps : [{
     name: 'melaniescheer',
     script: 'vapid',
+    args: "start .",
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     autorestart: true,
