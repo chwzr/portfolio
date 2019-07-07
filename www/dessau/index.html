@@ -1,0 +1,73 @@
+{{> head}}
+<main class=" main-project project-dessau">
+    {{#section dessau}}
+    <h1> {{titel}} </h1>
+
+    <!-- BEGIN Slideshow 0 -->
+
+    <div class="div-slideshow">
+        {{#section dessau2 multiple=true sortable=true}}
+            {{galleriebild type=image class="slide"}}
+        {{/section}}
+
+        <input type="button" id="input-open-gallery-0" class="input-open-gallery" data-gallery="0" data-image="0">
+        <label for="input-open-gallery-0"></label>
+    </div>
+
+    <!-- END Slideshow 0 -->
+
+    <!-- BEGIN Image Gallery 0 -->
+
+    <div id="div-gallery-0" class="div-gallery">
+        <input type="button" id="input-close-gallery-0" class="input-close-gallery">
+        <label class="label-input-close-gallery" for="input-close-gallery-0"></label>
+        <input type="button" id="input-prev-image-0" class="input-prev-image">
+        <label class="label-input-prev-image" for="input-prev-image-0">
+            <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                <path d="M28,0 L 0,18 L 28,36"></path>
+            </svg>
+        </label>
+        <input type="button" id="input-next-image-0" class="input-next-image">
+        <label class="label-input-next-image" for="input-next-image-0">
+            <svg xmlns="https://www.w3.org/2000/svg" width="28px" height="36px">
+                <path d="M0,0 L 28,18 L 0,36"></path>
+            </svg>
+        </label>
+        <ul>
+            {{#section dessau2 multiple=true sortable=true}}
+            <li>
+                {{galleriebild type=image}}
+            </li>
+            {{/section}}
+        </ul>
+    </div>
+
+    <!-- END Image Gallery 0 -->
+
+    <div class="text"> {{#if text1}}
+        {{text1 type=html required=false}}
+        {{/if}} </div>
+
+    <div class="img-dessau">{{#if bild1}}
+        {{bild1 type=image required=false}}
+        {{/if}}   
+        {{#if bild2}}
+            {{bild2 type=image required=false}}
+        {{/if}}
+    </div>
+    {{#if bild3}}
+        {{bild3 type=image required=false}}
+    {{/if}} 
+    {{#if bild4}}
+        {{bild4 type=image required=false}}
+    {{/if}} 
+    {{#if bild5}}
+        {{bild5 type=image required=false}}
+    {{/if}} 
+    <div class="next-project">
+        <a href="gestaltung">next project</a>
+    </div>
+    {{/section}}
+</main>
+
+{{> footer}}

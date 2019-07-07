@@ -146,6 +146,7 @@ main {
   }
 }
 
+// PROJEKTE
 
 // inter
 
@@ -336,6 +337,32 @@ main {
 .img-napapp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 13px;
+  max-width: 100%;
+}
+
+// dessau
+
+.project-dessau {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+ 
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+.img-dessau {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 13px;
   max-width: 100%;
 }
