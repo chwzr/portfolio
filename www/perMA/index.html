@@ -1,12 +1,12 @@
 {{> head}}
-<main class="main-project project-perma">
-    {{#section perma}}
+<main class="main-project project-perMA">
+    {{#section perMA}}
     <h1> {{titel}} </h1>
 
     <!-- BEGIN Slideshow 0 -->
 
     <div class="div-slideshow">
-        {{#section perma2 multiple=true sortable=true}}
+        {{#section perMA2 multiple=true sortable=true}}
             {{galleriebild type=image class="slide"}}
         {{/section}}
 
@@ -34,7 +34,7 @@
             </svg>
         </label>
         <ul>
-            {{#section perma2 multiple=true sortable=true}}
+            {{#section perMA2 multiple=true sortable=true}}
             <li>
                 {{galleriebild type=image}}
             </li>
@@ -48,7 +48,7 @@
         {{text1 type=html required=false}}
         {{/if}} </div>
 
-    <div class="img-perma">
+    <div class="img-perMA">
         {{#if bild1}}
         {{bild1 type=image required=false}}
         {{/if}}
@@ -64,7 +64,7 @@
     <!-- BEGIN Slideshow 1 -->
     
     <div class="div-slideshow">
-        {{#section perma3 multiple=true sortable=true}}
+        {{#section perMA3 multiple=true sortable=true}}
             {{galleriebild type=image class="slide"}}
         {{/section}}
 
@@ -92,7 +92,7 @@
             </svg>
         </label>
         <ul>
-            {{#section perma3 multiple=true sortable=true}}
+            {{#section perMA3 multiple=true sortable=true}}
             <li>
                 {{galleriebild type=image}}
             </li>
@@ -106,7 +106,7 @@
         {{text3 type=html required=false}}
         {{/if}} </div>
 
-    <div class="img-perma">
+    <div class="img-perMA">
         {{#if bild3}}
         {{bild3 type=image required=false}}
         {{/if}}
@@ -115,7 +115,7 @@
         {{/if}}
     </div>
 
-    {{#section perma4 multiple=true sortable=true}}
+    {{#section perMA4 multiple=true sortable=true}}
     {{galleriebild type=image}}
     {{/section}}
 
