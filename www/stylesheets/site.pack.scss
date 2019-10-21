@@ -540,14 +540,6 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
-
-    svg path {
-      fill: $color__yellow;
-    }
-
-    &:hover svg path {
-      fill: white;
-    }
   }
 
   li {
