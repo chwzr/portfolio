@@ -583,18 +583,22 @@ main {
 
 .label-input-prev-image, .label-input-next-image {
   bottom: 5vh;
+}
+
+.label-input-prev-image {
+  left: 5vh;
   background: $color__yellow;
   border-radius: 50%;
   &:hover {
     background-color: white;
 }
 
-.label-input-prev-image {
-  left: 5vh;
-}
-
 .label-input-next-image {
   right: 5vh;
+  background: $color__yellow;
+  border-radius: 50%;
+  &:hover {
+    background-color: white;
 }
 
 
