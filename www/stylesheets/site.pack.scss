@@ -212,7 +212,6 @@ main {
   }
 }
 
-
 // perMA
 
 .project-perMA {
@@ -543,11 +542,11 @@ main {
     z-index: 2;
 
     svg path {
-      fill: #fff;
+      fill: $color__yellow;
     }
 
     &:hover svg path {
-      fill: $color__yellow;
+      fill: white;
     }
   }
 
@@ -575,10 +574,10 @@ main {
 .label-input-close-gallery {
   top: 5vh;
   right: 5vh;
-  background: white;
+  background: $color__yellow;
   border-radius: 50%;
   &:hover {
-    background-color: $color__yellow;
+    background-color: white;
   }
 }
 
