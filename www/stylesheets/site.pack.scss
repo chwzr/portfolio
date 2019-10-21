@@ -540,6 +540,14 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
+
+    svg path {
+      fill: $color__yellow;
+    }
+
+    &:hover svg path {
+      fill: white;
+    }
   }
 
   li {
@@ -575,22 +583,17 @@ main {
 
 .label-input-prev-image, .label-input-next-image {
   bottom: 5vh;
+  background: $color__yellow;
+  &:hover {
+    background-color: white;
 }
 
 .label-input-prev-image {
   left: 5vh;
-  background: $color__yellow;
-  border-radius: 50%;
-  &:hover {
-    background-color: white;
 }
 
 .label-input-next-image {
   right: 5vh;
-  background: $color__yellow;
-  border-radius: 50%;
-  &:hover {
-    background-color: white;
 }
 
 
