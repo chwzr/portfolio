@@ -537,11 +537,14 @@ main {
     position: absolute;
     width: 32px;
     height: 32px;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
-
-  
+    background: $color__yellow;
+    &:hover {
+      background-color: white;
+    }
   }
 
   li {
@@ -568,20 +571,10 @@ main {
 .label-input-close-gallery {
   top: 5vh;
   right: 5vh;
-  border-radius: 50%;
-  background: $color__yellow;
-  &:hover {
-    background-color: white;
-  }
 }
 
 .label-input-prev-image, .label-input-next-image {
   bottom: 5vh;
-  border-radius: 50%;
-  background: $color__yellow;
-  &:hover {
-    background-color: white;
-  }
 }
 
 .label-input-prev-image {
