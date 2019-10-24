@@ -1,0 +1,99 @@
+{{> head}}
+<main class="main-project project-perma">
+    {{#section perma}}
+    <h1> {{titel}} </h1>
+
+    <!-- BEGIN Slideshow 0 -->
+
+    <div class="div-slideshow">
+        {{#section perma1 multiple=true sortable=true}}
+            {{galleriebild type=image class="slide"}}
+        {{/section}}
+
+        <input type="button" id="input-open-gallery-0" class="input-open-gallery" data-gallery="0" data-image="0">
+        <label for="input-open-gallery-0"></label>
+    </div>
+
+    <!-- END Slideshow 0 -->
+
+    <!-- BEGIN Image Gallery 0 -->
+
+    <div id="div-gallery-0" class="div-gallery">
+        <input type="button" id="input-close-gallery-0" class="input-close-gallery">
+        <label class="label-input-close-gallery" for="input-close-gallery-0"></label>
+        <input type="button" id="input-prev-image-0" class="input-prev-image">
+        <label class="label-input-prev-image" for="input-prev-image-0"></label>
+        <input type="button" id="input-next-image-0" class="input-next-image">
+        <label class="label-input-next-image" for="input-next-image-0"></label>
+        <ul>
+            {{#section perma1 multiple=true sortable=true}}
+            <li>
+                {{galleriebild type=image}}
+            </li>
+            {{/section}}
+        </ul>
+    </div>
+
+    <!-- END Image Gallery 0 -->
+
+    <div class="text"> {{#if text1}}
+        {{text1 type=html required=false}}
+        {{/if}} </div>
+
+    <div class="img-perma">
+        {{#if bild1}}
+        {{bild1 type=image required=false}}
+        {{/if}}
+        {{#if bild2}}
+        {{bild2 type=image required=false}}
+        {{/if}}
+    </div>  
+    
+    <div class="text"> {{#if text2}}
+        {{text2 type=html required=false}}
+        {{/if}} </div>
+
+    <div class="img-perma">
+        {{#if bild3}}
+        {{bild3 type=image required=false}}
+        {{/if}}
+        {{#if bild4}}
+        {{bild4 type=image required=false}}
+        {{/if}}
+        {{#if bild5}}
+        {{bild5 type=image required=false}}
+        {{/if}}
+        {{#if bild6}}
+        {{bild6 type=image required=false}}
+        {{/if}}
+    </div>
+
+
+    <div class="text"> {{#if text3}}
+        {{text3 type=html required=false}}
+        {{/if}} </div>
+
+    <div class="img-perma">
+        {{#if bild7}}
+        {{bild7 type=image required=false}}
+        {{/if}}
+        {{#if bild8}}
+        {{bild8 type=image required=false}}
+        {{/if}}
+    </div>
+
+    {{#section perma2 multiple=true sortable=true}}
+    {{galleriebild type=image}}
+    {{/section}}
+
+    <div class="text"> {{#if text4}}
+        {{text4 type=html required=false}}
+        {{/if}} </div>
+
+    <div class="next-project">
+        <a href="palucca">next project</a>
+    </div>
+    {{/section}}
+</main>
+
+{{> footer}}
